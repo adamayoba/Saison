@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Saisons</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="tab_text_4">Tab 4</string>
+    <string name="tab_text_5">Tab 5</string>
+    <string name="action_settings">action_settings</string>
+    <string name="action_settingsfirst">action_settingsfirst</string>
+    <string name="action_settingssecond">action_settingssecond</string>
+    <string name="action_settingsthird">action_settingsthird</string>
+    <string name="action_settingsfour">action_settingsfour</string>
+    <string name="titre_section0">Printemps</string>
+    <string name="titre_section1">Eté</string>
+    <string name="titre_section2">Automne</string>
+    <string name="titre_section3">Hiver</string>
+    <string name="titre_section4">Saisons_A</string>
+</resources>

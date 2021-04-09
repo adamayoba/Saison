@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_settings" type="id" />
+    <item name="action_settingsfirst" type="id" />
+    <item name="action_settingsthird" type="id" />
+    <item name="action_settingssecond" type="id" />
+    <item name="action_settingsfour" type="id" />
+</resources>
