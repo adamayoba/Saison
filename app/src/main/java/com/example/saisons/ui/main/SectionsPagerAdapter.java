@@ -38,15 +38,16 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return NatureFragment.newInstance(0, mContext.getString(R.string.titre_section0),R.drawable.printemps);
+                return AutreFragment.newInstance(0,mContext.getString(R.string.titre_section4) ,R.drawable.printemps,R.drawable.ete,R.drawable.automne,R.drawable.hiver);
             case 1:
-                return NatureFragment.newInstance(1, mContext.getString(R.string.titre_section1),R.drawable.ete);
+                return NatureFragment.newInstance(1,mContext.getString(R.string.titre_section0) ,R.drawable.printemps);
             case 2:
-                return NatureFragment.newInstance(2, mContext.getString(R.string.titre_section2),R.drawable.automne);
+                return NatureFragment.newInstance(2, mContext.getString(R.string.titre_section1),R.drawable.ete);
             case 3:
-                return NatureFragment.newInstance(3, mContext.getString(R.string.titre_section3),R.drawable.hiver);
+                return NatureFragment.newInstance(3, mContext.getString(R.string.titre_section2),R.drawable.automne);
             case 4:
-                return NatureFragment.newInstance(4, mContext.getString(R.string.titre_section4),);
+                return NatureFragment.newInstance(4, mContext.getString(R.string.titre_section3),R.drawable.hiver);
+
 
         }
         return null;
@@ -61,28 +62,29 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         Drawable images=null;
         switch (position) {
             case 0:
+                titre = mContext.getString(R.string.titre_section4).toUpperCase(l);
+                icone = mContext.getResources().getDrawable(R.drawable.ic_hiver);
+
+                break;
+            case 1:
                 titre = mContext.getString(R.string.titre_section0).toUpperCase(l);
                 icone = mContext.getResources().getDrawable(R.drawable.ic_printemps);
 
                 break;
-            case 1:
+            case 2:
                 titre = mContext.getString(R.string.titre_section1).toUpperCase(l);
                 icone = mContext.getResources().getDrawable(R.drawable.ic_ete);
                ;
                 break;
-            case 2:
+            case 3:
                 titre = mContext.getString(R.string.titre_section2).toUpperCase(l);
                 icone = mContext.getResources().getDrawable(R.drawable.ic_automne);
 
                 break;
-            case 3:
+            case 4:
                 titre = mContext.getString(R.string.titre_section3).toUpperCase(l);
                  icone = mContext.getResources().getDrawable(R.drawable.ic_hiver);
-            case 4:
-                titre = mContext.getString(R.string.titre_section4).toUpperCase(l);
-                //icone = mContext.getResources().getDrawable(R.drawable.ic_hiver);
 
-                break;
         }
         SpannableString sb = new SpannableString(" " + titre);
 // un espace est ajouté pour séparer le texte de l'image
